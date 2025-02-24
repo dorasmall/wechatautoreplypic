@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # 安装依赖
-RUN npm install --only=production
+RUN npm config set registry https://registry.npm.taobao.org
 
 # 复制项目代码
 COPY . .

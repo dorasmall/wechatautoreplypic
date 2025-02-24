@@ -1,14 +1,7 @@
 FROM node:12-slim
 WORKDIR /usr/src/app
-
-# 复制package.json和package-lock.json（如果有的话）
 COPY package*.json ./
-
-# 安装依赖
 RUN npm config set registry https://registry.npm.taobao.org
-
-# 复制项目代码
-COPY . .
-
-# 设置启动命令
+RUN npm install --only=production
+COPY . ./
 CMD ["node", "index.js"]

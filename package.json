@@ -1,0 +1,14 @@
+{
+  "name": "wechat-service",
+  "version": "1.0.0",
+  "description": "WeChat Service for Dynamic Image Reply",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "axios": "^0.21.1"
+  }
+}

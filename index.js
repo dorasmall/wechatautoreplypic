@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 
 const app = express();
-app.use(bodyParser.xml());
+app.use(xmlBodyParser());
 
 const PORT = process.env.PORT || 80;
 

@@ -1,9 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const xmlBodyParser = require('express-xml-bodyparser');
+const xmlBodyParser = require('express-xml-bodyparser'); // 确保正确引入
 const axios = require('axios');
 
 const app = express();
+
+// 使用 express-xml-bodyparser 解析 XML 格式的消息体
 app.use(xmlBodyParser());
 
 const PORT = process.env.PORT || 80;
